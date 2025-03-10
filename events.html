@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIUS COUTURE - Events</title>
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>SIRIUS COUTURE</h1>
+            <p>Redefining Modern Fashion</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee for displaying upcoming events -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">
+            UPCOMING: Spring Collection Launch - March 15, 2025 | Fashion Week Preview - April 10, 2025 | Summer Collection Showcase - May 5, 2025
+        </marquee>
+    </div>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="page-header">
+            <h2>Upcoming Events</h2>
+            <p>Stay updated with our fashion shows, collection launches, and exclusive gatherings</p>
+        </section>
+
+        <section class="events-filter">
+            <h3>Filter Events</h3>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="fashion-show">Fashion Shows</button>
+                <button class="filter-btn" data-filter="launch">Collection Launches</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+            </div>
+        </section>
+
+        <section class="events-container">
+            <!-- Event Item 1 -->
+            <div class="event-item" data-category="launch">
+                <div class="event-date">
+                    <span class="date">15</span>
+                    <span class="month">MAR</span>
+                </div>
+                <div class="event-details">
+                    <h3>Spring Collection Launch</h3>
+                    <p class="event-meta">
+                        <i class="fas fa-clock"></i> 7:00 PM - 10:00 PM
+                        <i class="fas fa-map-marker-alt"></i> SIRIUS Flagship Store, Downtown
+                    </p>
+                    <p class="event-description">
+                        Join us for an exclusive first look at our Spring Collection. Experience the vibrant colors, 
+                        fresh designs, and innovative styles that define our vision for the coming season.
+                    </p>
+                    <div class="event-buttons">
+                        <button class="btn-small event-details-btn">View Details</button>
+                        <button class="btn-small">RSVP</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Event Item 2 -->
+            <div class="event-item" data-category="fashion-show">
+                <div class="event-date">
+                    <span class="date">10</span>
+                    <span class="month">APR</span>
+                </div>
+                <div class="event-details">
+                    <h3>Fashion Week Preview</h3>
+                    <p class="event-meta">
+                        <i class="fas fa-clock"></i> 6:30 PM - 9:30 PM
+                        <i class="fas fa-map-marker-alt"></i> Metropolitan Fashion Center
+                    </p>
+                    <p class="event-description">
+                        Be among the first to witness our upcoming fashion week collection. This exclusive preview 
+                        showcases the designs that will grace the runways of international fashion weeks.
+                    </p>
+                    <div class="event-buttons">
+                        <button class="btn-small event-details-btn">View Details</button>
+                        <button class="btn-small">RSVP</button>
+                    </div>
+                </div>
+    
+                </div>
+            </div>
+
+            <!-- Event Item 3 -->
+            <div class="event-item" data-category="launch">
+                <div class="event-date">
+                    <span class="date">05</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Collection Showcase</h3>
+                    <p class="event-meta">
+                        <i class="fas fa-clock"></i> 5:00 PM - 8:00 PM
+                        <i class="fas fa-map-marker-alt"></i> Seaside Pavilion
+                    </p>
+                    <p class="event-description">
+                        Experience the essence of summer with our latest collection. Light fabrics, vibrant colors, 
+                        and breezy designs perfect for the warm season ahead.
+                    </p>
+                    <div class="event-buttons">
+                        <button class="btn-small event-details-btn">View Details</button>
+                        <button class="btn-small">RSVP</button>
+                    </div>
+                </div>   
+                </div>
+            </div>
+
+            <!-- Event Item 4 -->
+            <div class="event-item" data-category="workshop">
+                <div class="event-date">
+                    <span class="date">20</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="event-details">
+                    <h3>Sustainable Fashion Workshop</h3>
+                    <p class="event-meta">
+                        <i class="fas fa-clock"></i> 2:00 PM - 5:00 PM
+                        <i class="fas fa-map-marker-alt"></i> ELEGANCE Design Studio
+                    </p>
+                    <p class="event-description">
+                        Learn about sustainable fashion practices and how ELEGANCE is committed to ethical production. 
+                        This interactive workshop includes demonstrations and discussions with our design team.
+                    </p>
+                    <div class="event-buttons">
+                        <button class="btn-small event-details-btn">View Details</button>
+                        <button class="btn-small">Register</button>
+                    </div>
+                </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Calendar Section -->
+        <section class="event-calendar">
+            <h3>Events Calendar</h3>
+            <div id="calendar-container">
+                <!-- Calendar will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Event Details Modal -->
+        <div id="event-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="event-modal-details">
+                    <!-- Event details will be populated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SIRIUS COUTURE</h3>
+                <p>Redefining modern fashion with timeless elegance and innovative designs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collections</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SIRIUS COUTURE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript for Event Filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.events-filter .filter-btn');
+            const eventItems = document.querySelectorAll('.event-item');
+            
+            // Add click event to filter buttons
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Show or hide event items based on filter
+                    eventItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Event Modal Functionality
+            const modal = document.getElementById('event-modal');
+            const modalDetails = document.getElementById('event-modal-details');
+            const closeModal = document.querySelector('#event-modal .close-modal');
+            const detailButtons = document.querySelectorAll('.event-details-btn');
+            
+            // View Details button click event
+            detailButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const eventItem = this.closest('.event-item');
+                    const eventTitle = eventItem.querySelector('h3').textContent;
+                    const eventDate = eventItem.querySelector('.event-date').textContent.trim();
+                    const eventMeta = eventItem.querySelector('.event-meta').textContent.trim();
+                    const eventDesc = eventItem.querySelector('.event-description').textContent.trim();
+                    const eventImg = eventItem.querySelector('.event-image img').src;
+                    
+                    // Populate modal with event details
+                    modalDetails.innerHTML = `
+                        <div class="modal-event-header">
+                            <img src="${eventImg}" alt="${eventTitle}">
+                            <div class="modal-event-info">
+                                <h3>${eventTitle}</h3>
+                                <p><i class="fas fa-calendar-alt"></i> ${eventDate}</p>
+                                <p>${eventMeta}</p>
+                            </div>
+                        </div>
+                        <div class="modal-event-body">
+                            <h4>Event Description</h4>
+                            <p>${eventDesc}</p>
+                            <p>Join us for this exclusive event and experience the latest in fashion innovation by ELEGANCE. Light refreshments will be served, and attendees will receive a special gift.</p>
+                            <h4>What to Expect</h4>
+                            <ul>
+                                <li>Exclusive preview of new designs</li>
+                                <li>Meet and greet with our designers</li>
+                                <li>Styling demonstrations</li>
+                                <li>Networking opportunities with fashion enthusiasts</li>
+                            </ul>
+                            <div class="modal-event-actions">
+                                <button class="btn">RSVP Now</button>
+                                <button class="btn-small">Add to Calendar</button>
+                                <button class="btn-small">Share Event</button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Show modal
+                    modal.style.display = 'block';
+                });
+            });
+            
+            // Close modal when clicking X
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside of modal content
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            // Simple Calendar Generator
+            function generateCalendar() {
+                const calendarContainer = document.getElementById('calendar-container');
+                const now = new Date();
+                const currentMonth = now.getMonth();
+                const currentYear = now.getFullYear();
+                
+                // Month names
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+                
+                // Create calendar header
+                let calendarHTML = `
+                    <div class="calendar-header">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h4><span id="month-name">${monthNames[currentMonth]}</span> <span id="year">${currentYear}</span></h4>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days" id="calendar-days">
+                `;
+                
+                // Get first day of month
+                const firstDay = new Date(currentYear, currentMonth, 1);
+                const startingDay = firstDay.getDay(); // 0 = Sunday, 1 = Monday, etc.
+                
+                // Get number of days in month
+                const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+                
+                // Add empty cells for days before first day of month
+                for (let i = 0; i < startingDay; i++) {
+                    calendarHTML += `<div class="day empty"></div>`;
+                }
+                
+                // Add days of month
+                for (let i = 1; i <= daysInMonth; i++) {
+                    // Check if day has event (here we're just using our known event dates for demo)
+                    let hasEvent = (i === 15 && currentMonth === 2) || // March 15 (0-indexed)
+                                  (i === 10 && currentMonth === 3) || // April 10
+                                  (i === 5 && currentMonth === 4) || // May 5
+                                  (i === 20 && currentMonth === 4);  // May 20
+                    
+                    calendarHTML += `<div class="day ${hasEvent ? 'has-event' : ''}">${i}</div>`;
+                }
+                
+                calendarHTML += `
+                        </div>
+                    </div>
+                `;
+                
+                calendarContainer.innerHTML = calendarHTML;
+                
+                // Add event listeners for prev/next month
+                document.getElementById('prev-month').addEventListener('click', function() {
+                    // In a real implementation, you would update the calendar here
+                    alert('Previous month functionality would be implemented here');
+                });
+                
+                document.getElementById('next-month').addEventListener('click', function() {
+                    // In a real implementation, you would update the calendar here
+                    alert('Next month functionality would be implemented here');
+                });
+                
+                // Add event tooltips to days with events
+                document.querySelectorAll('.day.has-event').forEach(day => {
+                    day.addEventListener('mouseenter', function(e) {
+                        const dayNum = parseInt(this.textContent);
+                        let eventName = '';
+                        
+                        // Determine which event based on date
+                        if (dayNum === 15 && currentMonth === 2) eventName = 'Spring Collection Launch';
+                        else if (dayNum === 10 && currentMonth === 3) eventName = 'Fashion Week Preview';
+                        else if (dayNum === 5 && currentMonth === 4) eventName = 'Summer Collection Showcase';
+                        else if (dayNum === 20 && currentMonth === 4) eventName = 'Sustainable Fashion Workshop';
+                        
+                        // Create and position tooltip
+                        const tooltip = document.createElement('div');
+                        tooltip.className = 'event-tooltip';
+                        tooltip.textContent = eventName;
+                        
+                        // Position tooltip near the day
+                        tooltip.style.position = 'absolute';
+                        tooltip.style.top = (e.target.offsetTop - 30) + 'px';
+                        tooltip.style.left = e.target.offsetLeft + 'px';
+                        
+                        // Add tooltip to calendar
+                        document.getElementById('calendar-container').appendChild(tooltip);
+                        
+                        // Store tooltip reference on day element
+                        this.tooltip = tooltip;
+                    });
+                    
+                    day.addEventListener('mouseleave', function() {
+                        // Remove tooltip when mouse leaves
+                        if (this.tooltip) {
+                            this.tooltip.remove();
+                            this.tooltip = null;
+                        }
+                    });
+                });
+            }
+            
+            // Generate calendar
+            generateCalendar();
+        });
+    </script>
+</body>
+</html>
+

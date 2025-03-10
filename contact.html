@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRIUS COUTURE - Contact Us</title>
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="" alt="Sirius Couture Logo">
+            <h1>SIRIUS COUTURE</h1>
+            <p>Redefining Modern Fashion</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee for displaying upcoming events -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">
+            UPCOMING: Spring Collection Launch - March 25, 2025 | Fashion Week Preview - April 28, 2025 | Summer Collection Showcase - May 5, 2025
+        </marquee>
+    </div>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="page-header">
+            <h2>Contact Us</h2>
+            <p>We're here to assist you with any inquiries, appointments, or feedback</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you. Feel free to reach out with any questions about our collections, events, or services.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>123 Fashion Avenue<br>Design District<br>New York, NY 10001</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+2347032352158">+2347032352158</a><br>Monday-Friday: 9am - 6pm<br>Saturday: 10am - 4pm</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:ubong.emmanuel-etukudo@miva.edu.ng">ubong.emmanuel-etukudo@miva.edu.ng</a><br><a href="mailto:gift.akaninwor@miva.edu.ng">gift.akaninwor@miva.edu.ng</a><br><a href="mailto:abidemi.busari@miva.edu.ng">abidemi.busari@miva.edu.ng</a></p>
+                    </div>
+                </div>
+                
+                <div class="social-connect">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h3>Send Us a Message</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Please select</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="appointment">Schedule an Appointment</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="press">Press Inquiry</option>
+                            <option value="career">Career Opportunities</option>
+                        </select>
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates on new collections and events</label>
+                    </div>
+                    
+                    <button type="submit" class="btn" id="submit-btn">Send Message</button>
+                    <div id="form-success" class="form-success"></div>
+                </form>
+            </div>
+        </section>
+        
+        <section class="appointment-section">
+            <h3>Book an Appointment</h3>
+            <p>Schedule a personalized styling session or a private viewing of our latest collections.</p>
+            
+            <div class="appointment-types">
+                <div class="appointment-type">
+                    <i class="fas fa-user"></i>
+                    <h4>Personal Styling</h4>
+                    <p>One-on-one styling consultation with our fashion experts.</p>
+                    <button class="btn-small open-booking">Book Now</button>
+                </div>
+                
+                <div class="appointment-type">
+                    <i class="fas fa-eye"></i>
+                    <h4>Collection Preview</h4>
+                    <p>Private viewing of our latest or upcoming collections.</p>
+                    <button class="btn-small open-booking">Book Now</button>
+                </div>
+                
+                <div class="appointment-type">
+                    <i class="fas fa-tape"></i>
+                    <h4>Custom Tailoring</h4>
+                    <p>Personalized fitting and tailoring for your SIRIUS pieces.</p>
+                    <button class="btn-small open-booking">Book Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-section">
+            <h3>Find Us</h3>
+            <div class="map-container">
+                <!-- This would typically be a Google Maps or similar embed -->
+                <!-- For this example, using a placeholder image -->
+                <!-- <img src="https://via.placeholder.com/1200x400?text=ELEGANCE+Fashion+House+Map+Location" alt="Map Location"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9479352644153!2d7.434382775019358!3d9.068507990994435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e7542b6dc507b%3A0x3e93a0054b2eeee8!2sMiva%20Open%20University!5e0!3m2!1sen!2sng!4v1741619926874!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Booking Modal -->
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Book Your Appointment</h3>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="booking-name">Your Name</label>
+                        <input type="text" id="booking-name" name="booking-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="booking-email">Email Address</label>
+                        <input type="email" id="booking-email" name="booking-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="booking-phone">Phone Number</label>
+                        <input type="tel" id="booking-phone" name="booking-phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointment-type">Appointment Type</label>
+                        <select id="appointment-type" name="appointment-type" required>
+                            <option value="styling">Personal Styling</option>
+                            <option value="preview">Collection Preview</option>
+                            <option value="tailoring">Custom Tailoring</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointment-date">Preferred Date</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointment-time">Preferred Time</label>
+                        <select id="appointment-time" name="appointment-time" required>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="booking-notes">Additional Notes</label>
+                        <textarea id="booking-notes" name="booking-notes" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ELEGANCE</h3>
+                <p>Redefining modern fashion with timeless elegance and innovative designs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Collections</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ELEGANCE Fashion House. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    
